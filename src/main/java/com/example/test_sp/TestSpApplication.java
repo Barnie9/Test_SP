@@ -30,7 +30,9 @@ public class TestSpApplication {
         }
 
         for (Message message : messages) {
-            message.print();
+            // message.print();
+            String result = message.decode();
+            System.out.println(result);
         }
     }
 

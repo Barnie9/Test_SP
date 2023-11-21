@@ -1,5 +1,6 @@
 package com.example.test_sp.model;
 
+import com.example.test_sp.service.DecoderFactory;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -18,6 +19,10 @@ public class Message {
         this.date = date;
         this.message = message;
         this.house = house;
+    }
+
+    public String decode() {
+        return new DecoderFactory().createDecoder(this.house).decode(this.message);
     }
 
     public void print() {
