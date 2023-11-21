@@ -30,6 +30,10 @@ public class Message implements Visitee {
         visitor.visit(this);
     }
 
+    public String toString() {
+        return "Message: " + message + "\nHouse: " + house + "\nTimestamp: " + date;
+    }
+
     public void print() {
         System.out.println("Message: " + message);
         System.out.println("House: " + house);

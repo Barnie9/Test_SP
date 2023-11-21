@@ -30,6 +30,10 @@ public class MessageDecoderVisitor implements Visitor {
         }
     }
 
+    public String getJSON() {
+        return jsonArray.toString(4);
+    }
+
     public void print() {
         System.out.println(jsonArray.toString(4));
     }

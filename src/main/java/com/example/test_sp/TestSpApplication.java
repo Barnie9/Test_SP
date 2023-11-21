@@ -20,7 +20,7 @@ import java.util.List;
 public class TestSpApplication {
 
     public static void main(String[] args) {
-        // SpringApplication.run(TestSpApplication.class, args);
+        SpringApplication.run(TestSpApplication.class, args);
 
         List<Message> messages = new ArrayList<>();
 
